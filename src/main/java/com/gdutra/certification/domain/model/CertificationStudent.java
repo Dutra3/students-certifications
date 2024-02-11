@@ -29,7 +29,7 @@ public class CertificationStudent {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    @JoinColumn(name = "student_id")
+    @Column(name = "student_id")
     private UUID studentId;
 
     @ManyToOne

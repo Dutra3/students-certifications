@@ -19,9 +19,9 @@ public class StudentController {
     public String verifyIfHasCertification(@RequestBody VerifyHasCertificationDTO verifyHasCertificationDTO) {
         var result = verifyIfHasCertification.execute(verifyHasCertificationDTO);
         if (result) {
-            return "Ola mundo";
+            return "Nao pode fazer mais exames";
         } else {
-            return "Ola Outra coisa";
+            return "Pode fazer mais exames";
         }
     }
 }
